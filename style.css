@@ -1,22 +1,243 @@
+* {
+    box-sizing: border-box;
+}
+
 :root {
-    --main-bg-color: #cedae2;
-    --secondary-color: #00a39b;
-    --complementary-color: #0073e6;
+    --primary: #ffffff;
+    --secondary: #bb8cee;
+    --complementary: #a264e4;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
     font-family:'Poppins', sans-serif;
-    background-color: var(--main-bg-color);
-}
-
-h1 {
-    
-}
-
-p {
-
+    background-color: var(--primary);
+    padding: 0;
+    margin: 0;
 }
 
 a {
+    text-decoration: none;
+    color: black;
+}
+
+a:visited {
+    color: black;
+}
+
+h1 {
+    font-size: xx-large;
+}
+
+nav {
+    /* A compléter... */
+}
+nav ul {
+    /* A compléter... */
+}
+
+@media screen and (min-width: 1150px) {
+    header nav { 
+        padding-bottom: 20px;
+        border-bottom: .5px solid rgb(234 234 234);
+    }
+
+    nav .container {
+        display: flex;
+        justify-content: space-between;
+        margin: 0px 145px 0px 145px;
+    }
+    nav ul{
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        padding: 0;
+    }
+    header nav ul{
+        display: flex;
+    }
+    header nav ul:first-child a {
+        padding: 10px;
+        
+    }
+    header nav ul li {
+        align-items: center;
+        height: 35%;
+    }
+    header nav ul:first-child li:first-child a {
+        background-color: var(--secondary);
+        color: var(--primary);
+        border-radius: 10px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
+    }
+    header nav ul:first-child li:first-child a:hover {
+        background-color: var(--complementary);
+        box-shadow: 0 0px 5px 2px rgba(0, 0, 0, 0.12);
+    }
+    
+    header nav ul:first-child li:not(:first-child) a:hover{
+        background-color: #f4f4f4;
+        transition: all cubic-bezier(.4,0,.2,1);
+        animation-duration: .15s’;
+        border-radius: 10px;
+    }
+    header nav ul:nth-child(2) img{
+        width: 32px;
+    }
+    header nav ul:nth-child(2) img:hover{
+        transform: scale(1.2);
+        transition: all cubic-bezier(.4,0,.2,1);
+        animation-duration: .15s;
+    }
+    header section {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        padding: 50px;
+        border-bottom: .5px solid rgb(234 234 234);
+    }
+    header section h1 {
+        max-width: 400px;
+    }
+    header section .container{
+        padding: 50px 70px 50px 70px;
+        display: flex;
+        gap: 155px;
+        align-items: center;
+    }
+    header div img {
+       max-width: 250px;
+    }
+    .secteurs, .clients {
+        padding: 50px;
+        border-bottom: .5px solid rgb(234 234 234);
+    }
+    section .container nav ul {
+        gap: 90px;
+        margin: 0;
+    }
+    section .container nav ul li:first-child a {
+        background-color: var(--secondary);
+        border-radius: 10px;
+        color: #f4f4f4;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
+    }
+    section .container nav ul li:first-child a:hover {
+        background-color: var(--complementary);
+        box-shadow: 0 0px 5px 2px rgba(0, 0, 0, 0.12);
+    
+    }
+    .container .fig img {
+        width: 400px;
+        border-radius: 10px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
+        border: 1px solid transparent;
+    }
+
+    .info {
+        display: flex;
+        justify-content: center;
+        gap:20px;
+        padding: 80px 70px 20px 70px;
+    }
+
+    .info div {
+        max-width: 400px;
+    }
+
+    .info div button {
+        cursor: pointer;
+        background-color: var(--secondary);
+        border-radius: 7px;
+        width: 70%;
+        color: #f4f4f4;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
+        border: 1px solid transparent;
+    }
+    .info button:hover {
+        background-color: var(--complementary);
+        box-shadow: 0 0px 5px 2px rgba(0, 0, 0, 0.12);
+    }
+
+    .secteurs nav ul a {
+        padding: 10px;
+    }
+
+    .secteurs nav ul a:hover {
+        background-color: var(--secondary);
+        color: var(--primary);
+        border-radius: 10px;
+        color: #f4f4f4;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
+        border: 1px solid transparent;
+    }
+
+    .side, .front {
+        border: 0.5px solid grey;
+        padding: 10px;
+    }
+
+    .clients h2 {
+        text-align: center;
+        font-size: xx-large;
+    }
+
+    .clients .container {
+        display: flex;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .clients button {
+        border-radius: 100%;
+        width: 64px;
+        height: 64px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
+        border: 1px solid transparent;
+        padding: 0;
+        cursor: pointer;
+    }
+    .clients button:hover {
+        background-color: var(--secondary);
+        color: #f4f4f4;
+        box-shadow: 0 0px 5px 2px rgba(0, 0, 0, 0.12);
+    }
+    .clients button img {
+        border: none;
+        margin: 0;
+        width: 24px;
+        height: 24px;
+        padding: 0;
+    }
+
+    .clients button img:hover {
+        fill: #f4f4f4;
+    }
+
+
+    .side {
+        width: 202px;
+        height: 142px;
+    }
+    .front {
+        width: 328px;
+        height: 245px;
+    }
+        
+    footer {
+        
+    }
+
 
 }
