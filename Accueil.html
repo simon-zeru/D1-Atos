@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel='stylesheet'>
+    <link rel="stylesheet" href="src/css/accueil.css">
+    <link rel="stylesheet" href="src/css/main.css">
+    <link rel="stylesheet" href="src/css/navbar.css">
+    <title>Page d'accueil</title>
+</head>
+<body>
+    <header>
+        <div class="mini-container">
+            <div>
+                <nav>
+                    <div class="flex between">
+                        <ul class="flex center medium-gap">
+                            <li><a href="Accueil.html">Accueil</a></li>
+                            <li><a href="Valeurs.html">Nos Valeurs</a></li>
+                            <li><a href="Rejoindre.html">Nous Rejoindre</a></li>
+                        </ul>
+                        <ul class="flex center small-gap">
+                            <li><a class="block p-0" href="https://www.instagram.com/atosfr/?hl=fr" target="_blank"><img class="icon-social p-0" src="icons/icons8-instagram.svg" alt="instagram"></a></li>
+                            <li><a class="block p-0" href="https://www.facebook.com/AtosFR/?locale=fr_FR" target="_blank"><img class="icon-social p-0" src="icons/icons8-facebook.svg" alt="facebook"></a></li>
+                            <li><a class="block p-0" href="https://twitter.com/i/flow/login?redirect_after_login=%2FAtosFR" target="_blank"><img class="icon-social p-0" src="icons/icons8-twitterx.svg" alt="twitter"></a></li>
+                            <li><a class="block p-0" href="https://fr.linkedin.com/company/atos" target="_blank"><img class="icon-social p-0" src="icons/icons8-linkedin.svg" alt="linkedin"></a></li>
+                            <li><a class="block p-0" href="https://www.youtube.com/@AtosFrance/videos" target="_blank"><img class="icon-social p-0" src="icons/icons8-youtube.svg" alt="youtube"></a></li> 
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        
+        <section id="accroche">
+            <div class="container">
+                <div class="flex center">
+                    <h1 class="header-title">Lorem ipsum dolor sit amet consectetur.</h1>
+                    <img class="header-img" src="images/img-header.png" alt="big image">
+                </div>
+            </div>
+        </section>
+    </header>
+    
+    <section id="secteurs">
+        <div class="container">
+            <div class="flex-col">
+                <nav class="mini-container flex center">
+                    <ul class="flex wrap big-gap">
+                        <li><a href="Cybersecurite.html">Cybersécurité</a></li>
+                        <li><a href="Automatisation.html">Automatisation</a></li>
+                        <li><a href="Decarbonisation.html">Décarbonisation</a></li>
+                        <li><a href="Supercalculateur.html">Supercalculateurs</a></li>
+                    </ul>
+                </nav>
+                <div class="container flex wrap medium-gap center">
+                        <div class="accroche-secteur flex-col small-gap">
+                            <h2>Cybersécurité</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi esse iste rerum excepturi doloremque distinctio dolores sit dolore aliquid ducimus numquam ut culpa, commodi quaerat perspiciatis exercitationem. Exercitationem, corrupti inventore?</p>
+                            <button>En savoir plus</button>
+                        </div>
+                    <img class="img-secteur p-0" src="images/img-cybersecurite.webp" alt="Image Cybersécurité">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="clients">
+        <div class="container flex-col">
+            <h2>Nos principaux clients</h2>
+            <div class="container flex center small-gap carousel">
+                <div class="slider-before">
+                    <img class="side" src="images/img-client-9.png" alt="client 10">
+                </div>
+                <button class="button-before" type="button"><img class="start icon-chevron p-0" src="icons/chevron-left.svg" alt="Chevron Left"></button>
+                <div class="slider-front">
+                    <img class="front" src="images/img-client-1.png" alt="client 1">
+                </div>
+                <button class="button-after" type="button"><img class="end icon-chevron p-0" src="icons/chevron-right.svg" alt="Chevron Right"></button>
+                <div class="slider-after">
+                    <img class="side" src="images/img-client-2.png" alt="client 2">
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container flex-col center wrap">
+            <div class="flex w-100 small-gap">
+                <h1>Nous Contacter</h1>
+                <img class="footer-chev-up" src="icons/chevron-up.svg">
+            </div>
+
+            <div class="gauche">
+                <div id="gauche" class="footerBlock">
+                <h2>Par Message</h2>
+                <label for="nom">Nom</label>
+                <input type="text">
+                <label for="prenom">Prenom</label>
+                <input type="text">
+                <label for="email">Email</label>
+                <input type="text">
+                <label for="motif">Motif</label>
+                <select>
+                    <option value="">Choisir une option</option>
+                    <option value="motif1">Motif 1</option>
+                    <option value="motif2">Motif 2</option>
+                    <option value="motif3">Motif 3</option>
+                    <option value="motif4">Motif 4</option>
+                    <option value="motif5">Motif 5</option>
+                </select>
+                <label for="message">Description</label>
+                <textarea name="message" cols="30" rows="10"></textarea>
+                <button>Envoyer</button>
+                <br>
+                </div>
+            </div>
+    
+            <div class="droite">
+                <div id="droite" class="footerBlock">
+                <h2>Par Courrier</h2>
+                <h3>Adresse:</h3>
+                <p>1 rue de la Paix</p>
+                <p>Paris</p>
+                <p>Bastien</p>
+                <p>France</p>
+                <h3>Code Postal</h3>
+                <p>75000</p>
+                <h3>Téléphone</h3>
+                <p>01 23 45 67 89</p>
+                <h3>Mail</h3>
+                <p>mail@mail.fr</p>
+                <img src="images/img-contactus.png" alt="Contact Us">
+                </div>
+            </div>
+
+    </footer>
+    <script src="src/js/script.js"></script>
+</body>
+</html>
