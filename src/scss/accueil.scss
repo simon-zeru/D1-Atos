@@ -48,6 +48,8 @@ body {
     button {
         width: 64px;
         height: 64px;
+        min-width: 64px;
+        min-height: 64px;
         background-color: #f4f4f4;
         border: .5px solid #595555;
     }
@@ -57,6 +59,11 @@ body {
     width: 202px;
     height: 142px;
     opacity: 0.4;
+}
+
+.side, .front {
+    max-width: none;
+    max-height: none;
 }
 
 .front {
