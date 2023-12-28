@@ -1,0 +1,63 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--primary);
+}
+
+.header-title {
+    max-width: 400px;
+}
+
+.header-img {
+    max-width: 250px;
+    max-height: 170px;
+}
+
+.img-secteur {
+    width: 400px;
+    height: 250px; 
+}
+
+.accroche-secteur {
+    max-width: 400px;
+}
+
+.accroche-secteur button {
+    width: 70%;
+}
+
+.clients h2 {
+    text-align: center;
+    font-size: xx-large;
+}
+
+.clients button {
+    border-radius: 100%;
+    width: 64px;
+    height: 64px;
+}
+
+.side {
+    width: 202px;
+    height: 142px;
+    opacity: 0.4;
+}
+
+.front {
+    width: 328px;
+    height: 245px;
+}
+
+.icon-chevron {
+    width: 24px;
+    height: 24px;
+}
+
+.carousel {
+    flex-direction: column;
+}
+
+@media screen and (min-width: 992px) {
+    .carousel {
+        flex-direction: row;
+    }
+}
