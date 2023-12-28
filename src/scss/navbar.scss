@@ -1,3 +1,7 @@
+.nav-box {
+    padding: 20px;
+}
+
 ul:first-child li:first-child a {
     background-color: var(--secondary);
     color: var(--primary);
@@ -33,4 +37,10 @@ header ul:nth-child(2) li{
 
 .icon-social, .icon-chevron {
     box-shadow: none;
+}
+
+@media screen and (min-width: 992px) {
+    .nav-box {
+        padding: 35px 120px 0px 120px;
+    }
 }

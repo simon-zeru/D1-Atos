@@ -39,6 +39,14 @@ body, h1, h2, p, ul, li, i {
     display: block;
 }
 
+.text-center {
+    text-align: center;
+}
+
+.no-shrink {
+    flex-shrink: 0;
+}
+
 a {
     text-decoration: none;
 }

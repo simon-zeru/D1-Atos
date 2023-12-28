@@ -11,7 +11,7 @@
 </head>
 <body>
     <header>
-        <div class="mini-container">
+        <div class="nav-box">
             <div>
                 <nav>
                     <div class="flex between">
@@ -34,7 +34,7 @@
         
         <section id="accroche">
             <div class="container">
-                <div class="flex center">
+                <div class="flex center wrap">
                     <h1 class="header-title">Lorem ipsum dolor sit amet consectetur.</h1>
                     <img class="header-img" src="images/img-header.png" alt="big image">
                 </div>
@@ -45,8 +45,8 @@
     <section id="secteurs">
         <div class="container">
             <div class="flex-col">
-                <nav class="mini-container flex center">
-                    <ul class="flex wrap big-gap">
+                <nav class="flex center">
+                    <ul class="ul-secteurs">
                         <li><a href="Cybersecurite.html">Cybersécurité</a></li>
                         <li><a href="Automatisation.html">Automatisation</a></li>
                         <li><a href="Decarbonisation.html">Décarbonisation</a></li>
@@ -54,7 +54,7 @@
                     </ul>
                 </nav>
                 <div class="container flex wrap medium-gap center">
-                        <div class="accroche-secteur flex-col small-gap">
+                        <div class="accroche-secteur">
                             <h2>Cybersécurité</h2>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi esse iste rerum excepturi doloremque distinctio dolores sit dolore aliquid ducimus numquam ut culpa, commodi quaerat perspiciatis exercitationem. Exercitationem, corrupti inventore?</p>
                             <button>En savoir plus</button>
@@ -83,55 +83,56 @@
         </div>
     </section>
     <footer>
-        <div class="container flex-col center wrap">
+        <div class="container flex-col center">
             <div class="flex w-100 small-gap">
                 <h1>Nous Contacter</h1>
                 <img class="footer-chev-up" src="icons/chevron-up.svg">
             </div>
-
-            <div class="gauche">
-                <div id="gauche" class="footerBlock">
-                <h2>Par Message</h2>
-                <label for="nom">Nom</label>
-                <input type="text">
-                <label for="prenom">Prenom</label>
-                <input type="text">
-                <label for="email">Email</label>
-                <input type="text">
-                <label for="motif">Motif</label>
-                <select>
-                    <option value="">Choisir une option</option>
-                    <option value="motif1">Motif 1</option>
-                    <option value="motif2">Motif 2</option>
-                    <option value="motif3">Motif 3</option>
-                    <option value="motif4">Motif 4</option>
-                    <option value="motif5">Motif 5</option>
-                </select>
-                <label for="message">Description</label>
-                <textarea name="message" cols="30" rows="10"></textarea>
-                <button>Envoyer</button>
-                <br>
+            <div class="box-contact">
+                <div class="gauche">
+                    <div class="footerBlock">
+                    <h2>Par Message</h2>
+                    <label for="nom">Nom</label>
+                    <input type="text">
+                    <label for="prenom">Prenom</label>
+                    <input type="text">
+                    <label for="email">Email</label>
+                    <input type="text">
+                    <label for="motif">Motif</label>
+                    <select>
+                        <option value="">Choisir une option</option>
+                        <option value="motif1">Motif 1</option>
+                        <option value="motif2">Motif 2</option>
+                        <option value="motif3">Motif 3</option>
+                        <option value="motif4">Motif 4</option>
+                        <option value="motif5">Motif 5</option>
+                    </select>
+                    <label for="message">Description</label>
+                    <textarea name="message" cols="30" rows="10"></textarea>
+                    <button>Envoyer</button>
+                    <br>
+                    </div>
+                </div>
+        
+                <div class="droite">
+                    <div class="footerBlock">
+                    <h2>Par Courrier</h2>
+                    <h3>Adresse:</h3>
+                    <p>1 rue de la Paix</p>
+                    <p>Paris</p>
+                    <p>Bastien</p>
+                    <p>France</p>
+                    <h3>Code Postal</h3>
+                    <p>75000</p>
+                    <h3>Téléphone</h3>
+                    <p>01 23 45 67 89</p>
+                    <h3>Mail</h3>
+                    <p>mail@mail.fr</p>
+                    <img src="images/img-contactus.png" alt="Contact Us">
+                    </div>
                 </div>
             </div>
-    
-            <div class="droite">
-                <div id="droite" class="footerBlock">
-                <h2>Par Courrier</h2>
-                <h3>Adresse:</h3>
-                <p>1 rue de la Paix</p>
-                <p>Paris</p>
-                <p>Bastien</p>
-                <p>France</p>
-                <h3>Code Postal</h3>
-                <p>75000</p>
-                <h3>Téléphone</h3>
-                <p>01 23 45 67 89</p>
-                <h3>Mail</h3>
-                <p>mail@mail.fr</p>
-                <img src="images/img-contactus.png" alt="Contact Us">
-                </div>
-            </div>
-
+            
     </footer>
     <script src="src/js/script.js"></script>
 </body>

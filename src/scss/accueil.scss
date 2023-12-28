@@ -18,11 +18,26 @@ body {
 }
 
 .accroche-secteur {
-    max-width: 400px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+    max-width: 300px;
 
     button {
         width: 70%;
     }
+}
+
+.ul-secteurs {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
 }
 
 #clients {
@@ -31,9 +46,10 @@ body {
         font-size: xx-large;
     }
     button {
-        border-radius: 100%;
         width: 64px;
         height: 64px;
+        background-color: #f4f4f4;
+        border: .5px solid #595555;
     }
 }
 
@@ -67,17 +83,21 @@ footer {
     padding: 20px;
     background-color: #ffffff;
     font-family: Arial, sans-serif;
-}
 
-footer img {
-    width: 32px;
-    margin-right: 10px;
-    flex-wrap: 1;
+    img {
+        width: 32px;
+        margin-right: 10px;
+        flex-wrap: 1;
+    }
+    input, select {
+        height: 50px;
+    }
 }
 
 .footer-chev-up {
     width: 24px;
     height: 24px;
+    box-shadow: none;
 }
 
 .gauche, .droite {
@@ -87,49 +107,64 @@ footer img {
 }
 
 .droite img {
-    width: 31%;
-    height: auto;
-}
-
-
-footer input, select {
-    height: 50px;
+    width: auto;
+    height: 203px;
+    box-shadow:none;
 }
 
 .footerBlock {
     background-color: #ffffff;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    h2 {
+        color: #000000;
+        margin-bottom: 20px;
+    }
+
+    input[type="text"], select, textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid;
+        border-radius: 4px;
+    }
+
+    button {
+        padding: 10px 20px;
+        background-color: var(--complementary);
+        color: #ffffff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: var(--complementary);
+    }
 }
 
-.footerBlock h2 {
-    color: #000000;
-    margin-bottom: 20px;
-}
-
-.footerBlock input[type="text"], .footerBlock select, .footerBlock textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid;
-    border-radius: 4px;
-}
-
-.footerBlock button {
-    padding: 10px 20px;
-    background-color: var(--complementary);
-    color: #ffffff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-.footerBlock button:hover {
-    background-color: var(--complementary);
+.box-contact {
+    display: flex;
+    flex-direction: column;
 }
 
 @media screen and (min-width: 992px) {
     .carousel {
         flex-direction: row;
+    }
+
+    .box-contact {
+        flex-direction: row;
+    }
+
+    .ul-secteurs {
+        flex-direction: row;
+    }
+
+    .accroche-secteur {
+        align-items: flex-start;
+        text-align: start;
+        max-width: 400px;
     }
 }
