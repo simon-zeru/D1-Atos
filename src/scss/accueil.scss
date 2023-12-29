@@ -161,7 +161,7 @@ footer {
     }
 }
 
-.footer-chev-up {
+.footer-chev {
     box-shadow: none;
     width: 32px;
 }
@@ -177,6 +177,19 @@ footer {
     height: 203px;
     box-shadow:none;
 }
+
+.show {
+    transition: transform 0.5s ease;
+    transform: translateY(-100%);
+    opacity: 1;
+}
+
+.show.active {
+    transform: translateY(0);
+    opacity: 0;
+}
+
+
 
 .footerBlock {
     background-color: #ffffff;
