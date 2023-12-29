@@ -183,11 +183,11 @@ footer {
 .box-contact {
     overflow: hidden;
     max-height: 0px; 
-    transition: max-height 0.5s ease-out;
+    transition: max-height 0.7s ease-out;
 }
 
 .box-contact.active {
-    max-height: 1000px;
+    max-height: 5000px;
 }
 
 
