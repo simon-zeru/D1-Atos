@@ -27,7 +27,7 @@ window.addEventListener('resize', function () {
 
 const slider = document.body.querySelector('#clients');
 const sliderBefore = slider.querySelector('.slider-before');
-const sliderFront = slider.querySelector('.slider-front');
+const sliderCurrent = slider.querySelector('.slider-front');
 const sliderAfter = slider.querySelector('.slider-after');
 const buttonBefore = slider.querySelector('.button-before');
 const buttonAfter = slider.querySelector('.button-after');
@@ -65,20 +65,27 @@ function slideDir (dir) {
     a.querySelectorAll('.img-car').forEach(img => img.classList.add('hidden'));
     b.querySelectorAll('.img-car').forEach(img => img.classList.add('hidden'));
 
-    const childA = a.children[a.children.length-1];
-    const childB = b.children[b.children.length-1];
-    const imgCurrent = sliderFront.children[0];
+    const headA = a.children[a.children.length-1];
+    const headB = b.children[b.children.length-1];
+    const imgCurrent = sliderCurrent.children[0];
 
-    // Déplacez les images
-    b.insertBefore(imgCurrent, b.children[0]);
-    sliderFront.appendChild(childA);
-    a.insertBefore(childB, a.children[0]);
-
-    // Retirez la classe 'hidden' des images à afficher
-    childA.classList.remove('hidden');
-    childB.classList.remove('hidden');
-    imgCurrent.classList.remove('hidden')
-
+    if (dir > 0) {
+        // Déplacez les images en avant
+        b.insertBefore(imgCurrent, b.children[0]); // image du milieu déplacée en queue du b
+        sliderCurrent.appendChild(headA); // image en tête de file du a déplacée au milieu
+        a.insertBefore(headB, a.children[0]); // image en tête de file du b déplacée en queue du a
+    } else {
+        // Déplacez les images en arrières
+        b.appendChild(imgCurrent);
+        a.appendChild(b.children[0]);
+        sliderCurrent.appendChild(a.children[0]);
+    }
+    
+      // Retirez la classe 'hidden' des images à afficher qui sont en tête de file de a, b et c
+    a.children[a.children.length-1].classList.remove('hidden');
+    b.children[b.children.length-1].classList.remove('hidden');
+    sliderCurrent.children[0].classList.remove('hidden')
+    
 }
 
 const secteur = document.querySelector('#secteurs');
