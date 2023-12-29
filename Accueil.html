@@ -11,7 +11,7 @@
 </head>
 <body>
     <header>
-        <div class="mini-container">
+        <div class="nav-box">
             <div>
                 <nav>
                     <div class="flex between">
@@ -32,56 +32,152 @@
             </div>
         </div>
         
-        <section>
+        <section id="accroche">
             <div class="container">
-                <div class="flex center">
-                    <h1 class="header-title">Lorem ipsum dolor sit amet consectetur.</h1>
+                <div class="fig-head">
+                    <h1 class="header-title">Professionnalisez-vous en rejoignant la famille Atos !</h1>
                     <img class="header-img" src="images/img-header.png" alt="big image">
                 </div>
             </div>
         </section>
     </header>
     
-    <section class="secteurs">
-        <div class="container">
+    <section id="secteurs">
+        <div class="secteur-container">
             <div class="flex-col">
-                <nav class="mini-container flex center">
-                    <ul class="flex wrap big-gap">
-                        <li><a href="Cybersecurite.html">Cybersécurité</a></li>
-                        <li><a href="Automatisation.html">Automatisation</a></li>
-                        <li><a href="Decarbonisation.html">Décarbonisation</a></li>
-                        <li><a href="Supercalculateur.html">Supercalculateurs</a></li>
+                <nav class="flex center">
+                    <ul class="flex">
+                        <div class="ul-secteurs">
+                            <li><button id="autoButton" type="button">Automatisation</button></li>
+                            <li><button id="cyberButton" type="button">Cybersécurité</button></li>
+                        </div>
+                        <div class="ul-secteurs">
+                            <li><button id="decarbonButton" type="button">Décarbonisation</button></li>
+                            <li><button id="supercalcButton" type="button">Supercalculateurs</button></li>
+                        </div>
                     </ul>
                 </nav>
-                <div class="container flex wrap medium-gap center">
-                        <div class="accroche-secteur flex-col small-gap">
-                            <h2>Cybersécurité</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi esse iste rerum excepturi doloremque distinctio dolores sit dolore aliquid ducimus numquam ut culpa, commodi quaerat perspiciatis exercitationem. Exercitationem, corrupti inventore?</p>
-                            <button>En savoir plus</button>
-                        </div>
+
+                <div id="automat" class="info-secteur">
+                    <div class="accroche-secteur">
+                        <h2>Le virage de l'Intelligence Artificielle</h2>
+                        <p>L'utilisation de l'Intelligence Artificielle permet à nos partenaires de se focaliser sur leurs activités principales.
+                            <strong>Pour ne pas rater la révolution IA, Atos s'engage dans ce domaine avec le logiciel Codex AI Suite.</strong>
+                            Découvrez nos services d'automatisation IA et de deep learning dans nos divers secteurs d'activités.</p>
+                        <a href="Automatisation.html">En savoir plus</a>
+                    </div>
+                    <img class="img-secteur p-0" src="images/img-ia.jpeg" alt="Image Automatisation">
+                </div>
+                <div id="cyber" class="info-secteur hidden"> 
+                    <div class="accroche-secteur">
+                        <h2>L'innovation dans la Cybersécurité</h2>
+                        <p>La protection des biens et données numériques oblige les entreprises à relever le défi de la cybersécurité.
+                            <strong>85 % des cyberattaques peuvent être évitées avec des mesures appropriées de gestion des risques.</strong>
+                            Découvrez comment les produits de protection numérique d’Eviden, une entreprise appartenant au groupe ATOS, vous aident à relever les défis quotidiens de la cybersécurité.</p>
+                        <a href="Cybersecurite.html">En savoir plus</a>
+                    </div>
                     <img class="img-secteur p-0" src="images/img-cybersecurite.webp" alt="Image Cybersécurité">
                 </div>
+                <div id="decarbon" class="info-secteur hidden">
+                    <div class="accroche-secteur">
+                        <h2>La révolution du cloud</h2>
+                        <p>Nous accompagnons et accélérons la transition numérique des entreprises partenaires, en leur proposant des solutions modernes innovantes de stockage.
+                            <strong>Dans une démarche plus éco-responsable, le groupe Atos agit également en faveur de la décarbonation du cloud.</strong>
+                            Découvrez nos axes de transformation numériques, sécurisés et engagés pour la sauvegarde de la planète.</p>
+                        <a href="Decarbonisation.html">En savoir plus</a>
+                    </div>
+                    <img class="img-secteur p-0" src="images/img-decarbon.jpeg" alt="Image Décarbonisation">
+                </div>
+                <div id="supercalc" class="info-secteur hidden">
+                    <div class="accroche-secteur">
+                        <h2>Des supercalculateurs novateurs</h2>
+                        <p>Les supercalculateurs permettent à nos partenaires de traiter de grandes quantités de données.
+                            <strong>Ils sont utiles en météorologie et contribuent à une meilleure compréhension du changement climatique.</strong>
+                            Découvrez comment Atos est engagé dans ce secteur au cœur de l'écologie et de la souveraineté numérique.</p>
+                        <a href="Supercalculateur.html">En savoir plus</a>
+                    </div>
+                    <img class="img-secteur p-0" src="images/img-supercalc.jpeg" alt="Image Supercalculateur">
+                </div>
+ 
             </div>
         </div>
     </section>
-    <section class="clients">
+
+    <section id="clients">
         <div class="container flex-col">
             <h2>Nos principaux clients</h2>
             <div class="container flex center small-gap carousel">
-                <img class="side" src="images/img-client-9.png" alt="client 10">
-                <button><img class="start icon-chevron p-0" src="icons/chevron-left.svg" alt="Chevron Left"></button>
-                <div>
-                    <img class="front" src="images/img-client-1.png" alt="client 1">
+                <div class="side slider-before">
+                    <img class="img-car hidden" src="images/img-client-6.png" alt="client 6">
+                    <img class="img-car hidden" src="images/img-client-7.png" alt="client 7">
+                    <img class="img-car hidden" src="images/img-client-8.png" alt="client 8">
+                    <img class="img-car" src="images/img-client-9.png" alt="client 10">
                 </div>
-                <button><img class="end icon-chevron p-0" src="icons/chevron-right.svg" alt="Chevron Right"></button>
-                <img class="side" src="images/img-client-2.png" alt="client 2">
+                <button class="button-before" type="button"><img class="start icon-chevron p-0" src="icons/chevron-left.svg" alt="Chevron Left"></button>
+                <div class="front slider-front">
+                    <img class="img-car" src="images/img-client-1.png" alt="client 1">
+                </div>
+                <button class="button-after" type="button"><img class="end icon-chevron p-0" src="icons/chevron-right.svg" alt="Chevron Right"></button>
+                <div class="side slider-after">
+                    <img class="img-car" src="images/img-client-2.png" alt="client 2">
+                    <img class="img-car hidden" src="images/img-client-3.png" alt="client 3">
+                    <img class="img-car hidden" src="images/img-client-4.png" alt="client 4">
+                    <img class="img-car hidden" src="images/img-client-5.png" alt="client 5">
+                </div>
             </div>
         </div>
     </section>
     <footer>
-        <div class="container">
-            <h1>Nous contacter</h1>
-        </div>
+        <div class="flex-col center">
+            <div class="flex w-100 small-gap">
+                <h1>Nous Contacter</h1>
+                <img class="footer-chev-up" src="icons/chevron-up.svg">
+            </div>
+            <div class="box-contact">
+                <div class="gauche">
+                    <div class="footerBlock">
+                    <h2>Par Message</h2>
+                    <label for="nom">Nom</label>
+                    <input type="text">
+                    <label for="prenom">Prenom</label>
+                    <input type="text">
+                    <label for="email">Email</label>
+                    <input type="text">
+                    <label for="motif">Motif</label>
+                    <select>
+                        <option value="">Choisir une option</option>
+                        <option value="motif1">Motif 1</option>
+                        <option value="motif2">Motif 2</option>
+                        <option value="motif3">Motif 3</option>
+                        <option value="motif4">Motif 4</option>
+                        <option value="motif5">Motif 5</option>
+                    </select>
+                    <label for="message">Description</label>
+                    <textarea name="message" cols="30" rows="10"></textarea>
+                    <button>Envoyer</button>
+                    <br>
+                    </div>
+                </div>
+        
+                <div class="droite">
+                    <div class="footerBlock">
+                    <h2>Par Courrier</h2>
+                    <h3>Adresse:</h3>
+                    <p>1 rue de la Paix</p>
+                    <p>Paris</p>
+                    <p>Bastien</p>
+                    <p>France</p>
+                    <h3>Code Postal</h3>
+                    <p>75000</p>
+                    <h3>Téléphone</h3>
+                    <p>01 23 45 67 89</p>
+                    <h3>Mail</h3>
+                    <p>mail@mail.fr</p>
+                    <img src="images/img-contactus.png" alt="Contact Us">
+                    </div>
+                </div>
+            </div>
+            
     </footer>
     <script src="src/js/script.js"></script>
 </body>

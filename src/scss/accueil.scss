@@ -1,0 +1,256 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--primary);
+}
+
+.header-title {
+    max-width: 400px;
+}
+
+.header-img {
+    max-width: 250px;
+    max-height: 170px;
+}
+
+
+.fig-head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 15px;
+}
+.img-secteur {
+    width: 400px;
+    height: 250px; 
+}
+
+.secteur-container {
+    padding: 50px 0px 0px 0px;
+}
+
+.info-secteur {
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+#secteurs {
+    ul {
+        gap: 20px;
+    }
+    button {
+        background-color: var(--primary);
+        border: .5px solid grey;
+        width: 150px;
+        color:black;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
+    }
+    button:hover {
+        background-color: #efe7e7;
+    }
+}
+
+
+.accroche-secteur {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+    max-width: 300px;
+
+    a, a:visited {
+        width: 70%;
+        background-color: var(--secondary);
+        color: #f4f4f4;
+        text-align: center;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
+    }
+    a:hover {
+        background-color: var(--complementary);
+    }
+}
+
+.ul-secteurs {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+#clients {
+    h2 {
+        text-align: center;
+        font-size: xx-large;
+    }
+    button {
+        width: 64px;
+        height: 64px;
+        min-width: 64px;
+        min-height: 64px;
+        background-color: #f4f4f4;
+        border: .5px solid #595555;
+    }
+}
+
+.side {
+    width: 202px;
+    height: 142px;
+    min-width: 202px;
+    min-height: 142px;
+    opacity: 0.4;
+}
+
+.side, .front {
+    max-width: none;
+    max-height: none;
+}
+
+.front {
+    width: 328px;
+    height: 245px;
+    min-width: 328px;
+    min-height: 245px;
+}
+
+.img-car {
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.hidden {
+    display: none;
+}
+
+
+.icon-chevron {
+    width: 24px;
+    height: 24px;
+}
+
+.carousel {
+    flex-direction: column;
+}
+
+/* Partie footer contact */
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+
+    img {
+        width: 32px;
+        margin-right: 10px;
+        flex-wrap: 1;
+    }
+    input, select {
+        height: 50px;
+    }
+}
+
+.footer-chev-up {
+    width: 24px;
+    height: 24px;
+    box-shadow: none;
+}
+
+.gauche, .droite {
+    flex: 1;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.droite img {
+    width: auto;
+    height: 203px;
+    box-shadow:none;
+}
+
+.footerBlock {
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    h2 {
+        color: #000000;
+        margin-bottom: 20px;
+    }
+
+    input[type="text"], select, textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid;
+        border-radius: 4px;
+    }
+
+    button {
+        padding: 10px 20px;
+        background-color: var(--complementary);
+        color: #ffffff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: var(--complementary);
+    }
+}
+
+.box-contact {
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 600px) {
+    #secteurs button{
+        width: 250px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #secteurs button{
+        width: 170px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .fig-head {
+        text-align: start;
+    }
+    .carousel {
+        flex-direction: row;
+    }
+
+    .box-contact {
+        flex-direction: row;
+    }
+    .secteur-container {
+        padding: 50px;
+    }
+
+}
+
+@media screen and (min-width: 1034px) {
+
+    .accroche-secteur {
+        align-items: flex-start;
+        text-align: start;
+        max-width: 400px;
+    }
+
+}
