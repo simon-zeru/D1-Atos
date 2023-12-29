@@ -132,7 +132,7 @@ buttonSupercalc.addEventListener('click', () => changeTab(4));
 var chevron = document.querySelector('.footer-chev');
 const boxcontact = document.querySelector('.box-contact');
 
-
+/*
 chevron.addEventListener('click', () => {
     if (boxcontact.style.display === 'none') {
         boxcontact.style.display = 'flex'; // Ajoute 'display: flex' à l'élément
@@ -145,4 +145,12 @@ chevron.addEventListener('click', () => {
         chevron.src = 'icons/chevron-down.svg';
         boxcontact.classList.add('show.active');
     }
+});*/
+
+chevron.addEventListener('click', () => {
+    boxcontact.classList.toggle('active'); // Bascule la classe 'active'
+    chevron.src = boxcontact.classList.contains('active') 
+        ? 'icons/chevron-up.svg' 
+        : 'icons/chevron-down.svg';
 });
+

@@ -163,7 +163,7 @@ footer {
 
 .footer-chev {
     box-shadow: none;
-    width: 32px;
+    width: 42px;
 }
 
 .gauche, .droite {
@@ -178,17 +178,16 @@ footer {
     box-shadow:none;
 }
 
-.show {
-    transition: transform 0.5s ease;
-    transform: translateY(-100%);
-    opacity: 1;
+
+.box-contact {
+    overflow: hidden;
+    max-height: 0px; 
+    transition: max-height 0.5s ease-out;
 }
 
-.show.active {
-    transform: translateY(0);
-    opacity: 0;
+.box-contact.active {
+    max-height: 1000px;
 }
-
 
 
 .footerBlock {
