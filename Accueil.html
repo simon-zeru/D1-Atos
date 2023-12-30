@@ -11,29 +11,26 @@
 </head>
 <body>
     <header>
-        <div class="nav-box">
-            <div>
-                <nav>
-                    <div class="flex between">
-                        <ul class="flex center medium-gap">
-                            <li><a href="Accueil.html">Accueil</a></li>
-                            <li><a href="Valeurs.html">Nos Valeurs</a></li>
-                            <li><a href="Rejoindre.html">Nous Rejoindre</a></li>
-                        </ul>
-                        <ul class="flex center small-gap">
-                            <li><a class="block p-0" href="https://www.instagram.com/atosfr/?hl=fr" target="_blank"><img class="icon-social p-0" src="icons/icons8-instagram.svg" alt="instagram"></a></li>
-                            <li><a class="block p-0" href="https://www.facebook.com/AtosFR/?locale=fr_FR" target="_blank"><img class="icon-social p-0" src="icons/icons8-facebook.svg" alt="facebook"></a></li>
-                            <li><a class="block p-0" href="https://twitter.com/i/flow/login?redirect_after_login=%2FAtosFR" target="_blank"><img class="icon-social p-0" src="icons/icons8-twitterx.svg" alt="twitter"></a></li>
-                            <li><a class="block p-0" href="https://fr.linkedin.com/company/atos" target="_blank"><img class="icon-social p-0" src="icons/icons8-linkedin.svg" alt="linkedin"></a></li>
-                            <li><a class="block p-0" href="https://www.youtube.com/@AtosFrance/videos" target="_blank"><img class="icon-social p-0" src="icons/icons8-youtube.svg" alt="youtube"></a></li> 
-                        </ul>
-                    </div>
-                </nav>
-            </div>
+        <button type="button" class="burger"><img src="icons/burger.svg" alt="menu burger"></button>
+        <div class="nav-menu">
+            <nav class="menu">
+                <ul>
+                    <li><a href="Accueil.html">Accueil</a></li>
+                    <li><a href="Valeurs.html">Nos Valeurs</a></li>
+                    <li><a href="Rejoindre.html">Nous Rejoindre</a></li>
+                </ul>
+                <ul>
+                    <li><a class="block p-0" href="https://www.instagram.com/atosfr/?hl=fr" target="_blank"><img class="icon-social p-0" src="icons/icons8-instagram.svg" alt="instagram"></a></li>
+                    <li><a class="block p-0" href="https://www.facebook.com/AtosFR/?locale=fr_FR" target="_blank"><img class="icon-social p-0" src="icons/icons8-facebook.svg" alt="facebook"></a></li>
+                    <li><a class="block p-0" href="https://twitter.com/i/flow/login?redirect_after_login=%2FAtosFR" target="_blank"><img class="icon-social p-0" src="icons/icons8-twitterx.svg" alt="twitter"></a></li>
+                    <li><a class="block p-0" href="https://fr.linkedin.com/company/atos" target="_blank"><img class="icon-social p-0" src="icons/icons8-linkedin.svg" alt="linkedin"></a></li>
+                    <li><a class="block p-0" href="https://www.youtube.com/@AtosFrance/videos" target="_blank"><img class="icon-social p-0" src="icons/icons8-youtube.svg" alt="youtube"></a></li> 
+                </ul>
+            </nav>
         </div>
-        
+
         <section id="accroche">
-            <div class="container">
+            <div class="flex center h-100">
                 <div class="fig-head">
                     <h1 class="header-title">Professionnalisez-vous en rejoignant la famille Atos !</h1>
                     <img class="header-img" src="images/img-header.png" alt="big image">
@@ -130,7 +127,7 @@
     <footer>
         <div class="flex-col center">
             <div class="flex w-100 small-gap center">
-                <h1>Nous Contacter</h1>
+                <h2 id="title">Nous Contacter</h2>
                 <img class="footer-chev" src="icons/chevron-down.svg">
             </div>
             <div class="box-contact show.active">

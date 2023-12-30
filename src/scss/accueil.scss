@@ -4,7 +4,7 @@ body {
 }
 
 .header-title {
-    max-width: 400px;
+    max-width: 545px;
 }
 
 .header-img {
@@ -12,14 +12,20 @@ body {
     max-height: 170px;
 }
 
+#accroche {
+    height: 500px;
+}
 
 .fig-head {
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
     text-align: center;
-    gap: 15px;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    padding: 20px;
+    gap: 20px;
+    
 }
 .img-secteur {
     width: 400px;
@@ -45,13 +51,13 @@ body {
     }
     button {
         background-color: var(--primary);
-        border: .5px solid grey;
+        border: .5px solid rgb(199, 199, 199);
         width: 150px;
         color:black;
-        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
     }
     button:hover {
-        background-color: #efe7e7;
+        background-color: var(--complementary);
+        color: var(--primary);
     }
 }
 
@@ -64,7 +70,7 @@ body {
     align-items: center;
     text-align: center;
     gap: 15px;
-    max-width: 300px;
+    max-width: 440px;
 
     a, a:visited {
         width: 70%;
@@ -96,8 +102,19 @@ body {
         height: 64px;
         min-width: 64px;
         min-height: 64px;
-        background-color: #f4f4f4;
-        border: .5px solid #595555;
+        background-color: transparent;
+        padding: 0;
+
+        &:hover {
+            background-color: transparent;
+            box-shadow: none;
+        }
+
+        img {
+            width: 64px;
+            height: 64px;
+            padding: 0;
+        }
     }
 }
 
@@ -151,6 +168,12 @@ footer {
     background-color: #ffffff;
     font-family: Arial, sans-serif;
 
+    #title {
+        font-size: xx-large;
+        text-align: center;
+        font-weight: 545;
+    }
+
     img {
         width: 32px;
         margin-right: 10px;
@@ -183,7 +206,7 @@ footer {
 .box-contact {
     overflow: hidden;
     max-height: 0px; 
-    transition: max-height 0.7s ease-out;
+    transition: max-height 0.2s ease-out;
 }
 
 .box-contact.active {
@@ -238,11 +261,19 @@ footer {
     #secteurs button{
         width: 170px;
     }
+    .fig-head {
+        flex-direction: row;
+    }
 }
 
 @media screen and (min-width: 992px) {
     .fig-head {
         text-align: start;
+        justify-content: space-between;
+        gap: 115px;
+        h1 {
+            font-size: 2.5rem;
+        }
     }
     .carousel {
         flex-direction: row;
