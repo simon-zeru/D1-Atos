@@ -1,16 +1,37 @@
-const buttonBurger = document.querySelector('.burger');
-const menu = document.querySelector('.nav-menu');
+// Partie animation de la section secteurs
 
-buttonBurger.addEventListener('click', () => {
-    if (menu.classList.contains('show')) {
-        menu.classList.remove('show');
-        buttonBurger.children[0].src = 'icons/burger.svg';
+const secteur = document.querySelector('#secteurs');
+const buttonAuto = secteur.querySelector('#autoButton');
+const buttonCyber = secteur.querySelector('#cyberButton');
+const buttonDecarb = secteur.querySelector('#decarbonButton');
+const buttonSupercalc = secteur.querySelector('#supercalcButton');
+
+
+buttonAuto.addEventListener('click', () => changeTab(1));
+buttonCyber.addEventListener('click', () => changeTab(2));
+buttonDecarb.addEventListener('click', () => changeTab(3));
+buttonSupercalc.addEventListener('click', () => changeTab(4));
+
+/**
+ * 
+ * @param {1|2|3|4} n 
+ */
+ function changeTab(n) {
+    secteur.querySelectorAll('.info-secteur').forEach(element => element.classList.add('hidden'));
+    if (n === 1) {
+        secteur.querySelector('#automat').classList.remove('hidden');
+    } else if (n === 2) {
+        secteur.querySelector('#cyber').classList.remove('hidden');
+    } else if (n === 3) {
+        secteur.querySelector('#decarbon').classList.remove('hidden');
     } else {
-        menu.classList.add('show');
-        buttonBurger.children[0].src = 'icons/x.svg';
+        secteur.querySelector('#supercalc').classList.remove('hidden');
     }
-});
+}
 
+// Partie animation de la section clients
+
+// Partie animation des chevrons du carrousel clients
 
 function updateChevronClasses() {
     var windowWidth = window.innerWidth;
@@ -38,6 +59,7 @@ window.addEventListener('resize', function () {
     updateChevronClasses();
 });
 
+// Partie animation du carrousel clients
 
 const slider = document.body.querySelector('#clients');
 const sliderBefore = slider.querySelector('.slider-before');
@@ -111,60 +133,4 @@ function slideDir (dir) {
     sliderCurrent.children[0].classList.remove('hidden')
     
 }
-
-const secteur = document.querySelector('#secteurs');
-const buttonAuto = secteur.querySelector('#autoButton');
-const buttonCyber = secteur.querySelector('#cyberButton');
-const buttonDecarb = secteur.querySelector('#decarbonButton');
-const buttonSupercalc = secteur.querySelector('#supercalcButton');
-
-
-buttonAuto.addEventListener('click', () => changeTab(1));
-buttonCyber.addEventListener('click', () => changeTab(2));
-buttonDecarb.addEventListener('click', () => changeTab(3));
-buttonSupercalc.addEventListener('click', () => changeTab(4));
-
-/**
- * 
- * @param {1|2|3|4} n 
- */
- function changeTab(n) {
-    secteur.querySelectorAll('.info-secteur').forEach(element => element.classList.add('hidden'));
-    if (n === 1) {
-        secteur.querySelector('#automat').classList.remove('hidden');
-    } else if (n === 2) {
-        secteur.querySelector('#cyber').classList.remove('hidden');
-    } else if (n === 3) {
-        secteur.querySelector('#decarbon').classList.remove('hidden');
-    } else {
-        secteur.querySelector('#supercalc').classList.remove('hidden');
-    }
-}
-
-// gestion du footer
-
-var chevron = document.querySelector('.footer-chev');
-const boxcontact = document.querySelector('.box-contact');
-
-/*
-chevron.addEventListener('click', () => {
-    if (boxcontact.style.display === 'none') {
-        boxcontact.style.display = 'flex'; // Ajoute 'display: flex' à l'élément
-        boxcontact.style.height = 'auto'; // Change la hauteur
-        chevron.src = 'icons/chevron-up.svg';
-        boxcontact.classList.remove('show.active');
-    } else {
-        boxcontact.style.display = 'none';
-        boxcontact.style.height = '0'; // Change la hauteur
-        chevron.src = 'icons/chevron-down.svg';
-        boxcontact.classList.add('show.active');
-    }
-});*/
-
-chevron.addEventListener('click', () => {
-    boxcontact.classList.toggle('active'); // Bascule la classe 'active'
-    chevron.src = boxcontact.classList.contains('active') 
-        ? 'icons/chevron-up.svg' 
-        : 'icons/chevron-down.svg';
-});
 

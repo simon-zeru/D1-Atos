@@ -1,0 +1,39 @@
+/* Partie "nos valeurs" */
+
+section {
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+section div div img {
+    width: 200px;
+    height: 200px;
+    
+}
+
+section div {
+    display: flex;
+    flex-direction: column;
+    margin: 2%;
+}
+
+div figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section div div:nth-child(2) {
+    align-self: flex-end;
+}
+
+section div div {
+    display: flex;
+    flex-direction: column;
+}
+
+section div div {
+    width: 40%;
+    height: auto;
+}

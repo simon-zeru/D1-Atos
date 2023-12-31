@@ -8,5 +8,6 @@
             "savePathReplacementPairs": null
         }
     ],
-    "liveSassCompile.settings.showOutputWindowOn": "None"
+    "liveSassCompile.settings.showOutputWindowOn": "None",
+    "git.ignoreLimitWarning": true
 }

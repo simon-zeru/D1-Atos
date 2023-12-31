@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="src/css/accueil.css">
     <link rel="stylesheet" href="src/css/main.css">
     <link rel="stylesheet" href="src/css/navbar.css">
+    <link rel="stylesheet" href="src/css/footer.css">
     <link rel="icon" type="image/png" href="icons/favicon.png">
     <title>Page d'accueil</title>
 </head>
@@ -39,10 +40,9 @@
             </div>
         </section>
     </header>
-    
-    <section id="secteurs">
-        <div class="secteur-container">
-            <div class="flex-col">
+    <main>
+        <section id="secteurs">
+            <div class="secteur-container flex-col">
                 <nav class="flex center">
                     <ul class="flex">
                         <div class="ul-secteurs">
@@ -55,76 +55,75 @@
                         </div>
                     </ul>
                 </nav>
-
                 <div id="automat" class="info-secteur">
-                    <div class="accroche-secteur">
+                    <div>
                         <h2>Le virage de l'Intelligence Artificielle</h2>
                         <p>L'utilisation de l'Intelligence Artificielle permet à nos partenaires de se focaliser sur leurs activités principales.
                             <strong>Pour ne pas rater la révolution IA, Atos s'engage dans ce domaine avec le logiciel Codex AI Suite.</strong>
                             Découvrez nos services d'automatisation IA et de deep learning dans nos divers secteurs d'activités.</p>
                         <a href="Automatisation.html">En savoir plus</a>
                     </div>
-                    <img class="img-secteur p-0" src="images/img-ia.jpeg" alt="Image Automatisation">
+                    <img src="images/img-ia.jpeg" alt="Image Automatisation">
                 </div>
                 <div id="cyber" class="info-secteur hidden"> 
-                    <div class="accroche-secteur">
+                    <div>
                         <h2>L'innovation dans la Cybersécurité</h2>
                         <p>La protection des biens et données numériques oblige les entreprises à relever le défi de la cybersécurité.
                             <strong>85 % des cyberattaques peuvent être évitées avec des mesures appropriées de gestion des risques.</strong>
                             Découvrez comment les produits de protection numérique d’Eviden, une entreprise appartenant au groupe ATOS, vous aident à relever les défis quotidiens de la cybersécurité.</p>
                         <a href="Cybersecurite.html">En savoir plus</a>
                     </div>
-                    <img class="img-secteur p-0" src="images/img-cybersecurite.webp" alt="Image Cybersécurité">
+                    <img src="images/img-cybersecurite.webp" alt="Image Cybersécurité">
                 </div>
                 <div id="decarbon" class="info-secteur hidden">
-                    <div class="accroche-secteur">
+                    <div>
                         <h2>La révolution du cloud</h2>
                         <p>Nous accompagnons et accélérons la transition numérique des entreprises partenaires, en leur proposant des solutions modernes innovantes de stockage.
                             <strong>Dans une démarche plus éco-responsable, le groupe Atos agit également en faveur de la décarbonation du cloud.</strong>
                             Découvrez nos axes de transformation numériques, sécurisés et engagés pour la sauvegarde de la planète.</p>
                         <a href="Decarbonisation.html">En savoir plus</a>
                     </div>
-                    <img class="img-secteur p-0" src="images/img-decarbon.jpeg" alt="Image Décarbonisation">
+                    <img src="images/img-decarbon.jpeg" alt="Image Décarbonisation">
                 </div>
                 <div id="supercalc" class="info-secteur hidden">
-                    <div class="accroche-secteur">
+                    <div>
                         <h2>Des supercalculateurs novateurs</h2>
                         <p>Les supercalculateurs permettent à nos partenaires de traiter de grandes quantités de données.
                             <strong>Ils sont utiles en météorologie et contribuent à une meilleure compréhension du changement climatique.</strong>
                             Découvrez comment Atos est engagé dans ce secteur au cœur de l'écologie et de la souveraineté numérique.</p>
                         <a href="Supercalculateur.html">En savoir plus</a>
                     </div>
-                    <img class="img-secteur p-0" src="images/img-supercalc.jpeg" alt="Image Supercalculateur">
-                </div>
- 
-            </div>
-        </div>
-    </section>
-
-    <section id="clients">
-        <div class="container flex-col">
-            <h2>Nos principaux clients</h2>
-            <div class="container flex center small-gap carousel">
-                <div class="side slider-before">
-                    <img class="img-car hidden" src="images/img-client-3.png" alt="client 3">
-                    <img class="img-car hidden" src="images/img-client-4.png" alt="client 4">
-                    <img class="img-car hidden" src="images/img-client-5.png" alt="client 5">
-                    <img class="img-car hidden" src="images/img-client-6.png" alt="client 6">
-                    <img class="img-car hidden" src="images/img-client-7.png" alt="client 7">
-                    <img class="img-car hidden" src="images/img-client-8.png" alt="client 8">
-                    <img class="img-car" src="images/img-client-9.png" alt="client 9">
-                </div>
-                <button class="button-before" type="button"><img class="start icon-chevron p-0" src="icons/chevron-left.svg" alt="Chevron Left"></button>
-                <div class="front slider-front">
-                    <img class="img-car" src="images/img-client-1.png" alt="client 1">
-                </div>
-                <button class="button-after" type="button"><img class="end icon-chevron p-0" src="icons/chevron-right.svg" alt="Chevron Right"></button>
-                <div class="side slider-after">
-                    <img class="img-car" src="images/img-client-2.png" alt="client 2">
+                    <img src="images/img-supercalc.jpeg" alt="Image Supercalculateur">
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    
+        <section id="clients">
+            <div class="container flex-col">
+                <h2>Nos principaux clients</h2>
+                <div class="container flex center small-gap carousel">
+                    <div class="side slider-before">
+                        <img class="img-car hidden" src="images/img-client-3.png" alt="client 3">
+                        <img class="img-car hidden" src="images/img-client-4.png" alt="client 4">
+                        <img class="img-car hidden" src="images/img-client-5.png" alt="client 5">
+                        <img class="img-car hidden" src="images/img-client-6.png" alt="client 6">
+                        <img class="img-car hidden" src="images/img-client-7.png" alt="client 7">
+                        <img class="img-car hidden" src="images/img-client-8.png" alt="client 8">
+                        <img class="img-car" src="images/img-client-9.png" alt="client 9">
+                    </div>
+                    <button class="button-before" type="button"><img class="start icon-chevron p-0" src="icons/chevron-left.svg" alt="Chevron Left"></button>
+                    <div class="front slider-front">
+                        <img class="img-car" src="images/img-client-1.png" alt="client 1">
+                    </div>
+                    <button class="button-after" type="button"><img class="end icon-chevron p-0" src="icons/chevron-right.svg" alt="Chevron Right"></button>
+                    <div class="side slider-after">
+                        <img class="img-car" src="images/img-client-2.png" alt="client 2">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
     <footer>
         <div class="flex-col center">
             <div class="flex w-100 small-gap center">
@@ -177,6 +176,8 @@
             </div>
             
     </footer>
-    <script src="src/js/script.js"></script>
+    <script src="src/js/accueil.js"></script>
+    <script src="src/js/navbar.js"></script>
+    <script src="src/js/footer.js"></script>
 </body>
 </html>
