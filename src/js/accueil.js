@@ -90,7 +90,7 @@ function slideDir (dir) {
     let b;
     // Structure linéaire utilisée : FILE (FIFO : First In First Out)
     // Définir le sens, ici : TOUJOURS a -> b
-    if (dir===-1) {
+    if (dir===1) {
         // Sens backward
         a = sliderAfter;
         b = sliderBefore;
@@ -107,7 +107,7 @@ function slideDir (dir) {
 
     const imgCurrent = sliderCurrent.children[0]; // Image du milieu (c)
 
-    if (dir > 0) {
+    if (dir < 0) {  
         // Schéma forward : A (SliderBefore) --> C (SliderCurrent) --> B (Slider After)
         const headA = a.children[a.children.length-1]; // Image en tête de a
         const headB = b.children[b.children.length-1]; // Image en tête de b
