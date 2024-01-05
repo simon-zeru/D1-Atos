@@ -19,8 +19,30 @@ chevron.addEventListener('click', () => {
 });*/
 
 chevron.addEventListener('click', () => {
-    boxcontact.classList.toggle('active'); // Bascule la classe 'active'
-    chevron.src = boxcontact.classList.contains('active') 
-        ? 'icons/chevron-up.svg' 
-        : 'icons/chevron-down.svg';
+    if(!boxcontact.classList.contains('active')){
+        chevron.src = 'icons/chevron-up.svg';
+        boxcontact.classList.toggle('active'); // Bascule la classe 'active'
+        
+        // Défilement vers le bas de la page 50ms plus tard
+        setTimeout(function() { 
+            window.scrollTo({
+              top: document.body.scrollHeight,
+              behavior: 'smooth' 
+            });
+        }, 50);
+
+    }else{
+        chevron.src = 'icons/chevron-down.svg';
+        // Défilement vers le haut de la page
+        window.scrollTo({
+            top: document.body.scrollTop,
+            behavior: 'smooth' 
+        });
+
+        // Bascule la classe 'active' 150ms plus tard pour laisser le temps de défiler
+        setTimeout(function() {
+            boxcontact.classList.toggle('active');
+        }, 150);
+    }
+
 });
