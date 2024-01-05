@@ -75,6 +75,14 @@ footer {
         border-radius: 4px;
     }
 
+    input[type="email"], select, textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid;
+        border-radius: 4px;
+    }
+
     button {
         padding: 10px 20px;
         background-color: var(--complementary);
