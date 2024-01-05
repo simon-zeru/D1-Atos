@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel='stylesheet'>
+    <link rel="stylesheet" href="src/css/accueil.css">
+    <link rel="stylesheet" href="src/css/main.css">
+    <link rel="stylesheet" href="src/css/navbar.css">
+    <link rel="stylesheet" href="src/css/footer.css">
+    <link rel="icon" type="image/png" href="icons/favicon.png">
+    <title>Page d'accueil</title>
+</head>
+<body>
+    <header>
+        <button type="button" class="burger"><img src="icons/burger.svg" alt="menu burger"></button>
+        <div class="nav-menu">
+            <nav class="menu">
+                <ul>
+                    <li><a href="Accueil.html">Accueil</a></li>
+                    <li><a href="Valeurs.html">Nos Valeurs</a></li>
+                    <li><a href="Rejoindre.html">Nous Rejoindre</a></li>
+                </ul>
+                <ul>
+                    <li><a class="block p-0" href="https://www.instagram.com/atosfr/?hl=fr" target="_blank"><img class="icon-social p-0" src="icons/icons8-instagram.svg" alt="instagram"></a></li>
+                    <li><a class="block p-0" href="https://www.facebook.com/AtosFR/?locale=fr_FR" target="_blank"><img class="icon-social p-0" src="icons/icons8-facebook.svg" alt="facebook"></a></li>
+                    <li><a class="block p-0" href="https://twitter.com/i/flow/login?redirect_after_login=%2FAtosFR" target="_blank"><img class="icon-social p-0" src="icons/icons8-twitterx.svg" alt="twitter"></a></li>
+                    <li><a class="block p-0" href="https://fr.linkedin.com/company/atos" target="_blank"><img class="icon-social p-0" src="icons/icons8-linkedin.svg" alt="linkedin"></a></li>
+                    <li><a class="block p-0" href="https://www.youtube.com/@AtosFrance/videos" target="_blank"><img class="icon-social p-0" src="icons/icons8-youtube.svg" alt="youtube"></a></li> 
+                </ul>
+            </nav>
+        </div>
+
+        <section id="accroche">
+            <div class="flex center h-100">
+                <div class="fig-head">
+                    <h1 class="header-title">Professionnalisez-vous en rejoignant la famille Atos !</h1>
+                    <img class="header-img" src="images/img-header.png" alt="big image">
+                </div>
+            </div>
+        </section>
+    </header>
+    <main>
+        <section id="secteurs">
+            <div class="secteur-container flex-col">
+                <nav class="flex center">
+                    <ul class="flex">
+                        <div class="ul-secteurs">
+                            <li><button id="autoButton" type="button">Automatisation</button></li>
+                            <li><button id="cyberButton" type="button">Cybersécurité</button></li>
+                        </div>
+                        <div class="ul-secteurs">
+                            <li><button id="decarbonButton" type="button">Décarbonisation</button></li>
+                            <li><button id="supercalcButton" type="button">Supercalculateurs</button></li>
+                        </div>
+                    </ul>
+                </nav>
+                <div id="automat" class="info-secteur">
+                    <div>
+                        <h2>Le virage de l'Intelligence Artificielle</h2>
+                        <p>L'utilisation de l'Intelligence Artificielle permet à nos partenaires de se focaliser sur leurs activités principales.
+                            <strong>Pour ne pas rater la révolution IA, Atos s'engage dans ce domaine avec le logiciel Codex AI Suite.</strong>
+                            Découvrez nos services d'automatisation IA et de deep learning dans nos divers secteurs d'activités.</p>
+                        <a href="Automatisation.html">En savoir plus</a>
+                    </div>
+                    <img src="images/img-ia.jpeg" alt="Image Automatisation">
+                </div>
+                <div id="cyber" class="info-secteur hidden"> 
+                    <div>
+                        <h2>L'innovation dans la Cybersécurité</h2>
+                        <p>La protection des biens et données numériques oblige les entreprises à relever le défi de la cybersécurité.
+                            <strong>85 % des cyberattaques peuvent être évitées avec des mesures appropriées de gestion des risques.</strong>
+                            Découvrez comment les produits de protection numérique d’Eviden, une entreprise appartenant au groupe ATOS, vous aident à relever les défis quotidiens de la cybersécurité.</p>
+                        <a href="Cybersecurite.html">En savoir plus</a>
+                    </div>
+                    <img src="images/img-cybersecurite.webp" alt="Image Cybersécurité">
+                </div>
+                <div id="decarbon" class="info-secteur hidden">
+                    <div>
+                        <h2>La révolution du cloud</h2>
+                        <p>Nous accompagnons et accélérons la transition numérique des entreprises partenaires, en leur proposant des solutions modernes innovantes de stockage.
+                            <strong>Dans une démarche plus éco-responsable, le groupe Atos agit également en faveur de la décarbonation du cloud.</strong>
+                            Découvrez nos axes de transformation numériques, sécurisés et engagés pour la sauvegarde de la planète.</p>
+                        <a href="Decarbonisation.html">En savoir plus</a>
+                    </div>
+                    <img src="images/img-decarbon.jpeg" alt="Image Décarbonisation">
+                </div>
+                <div id="supercalc" class="info-secteur hidden">
+                    <div>
+                        <h2>Des supercalculateurs novateurs</h2>
+                        <p>Les supercalculateurs permettent à nos partenaires de traiter de grandes quantités de données.
+                            <strong>Ils sont utiles en météorologie et contribuent à une meilleure compréhension du changement climatique.</strong>
+                            Découvrez comment Atos est engagé dans ce secteur au cœur de l'écologie et de la souveraineté numérique.</p>
+                        <a href="Supercalculateur.html">En savoir plus</a>
+                    </div>
+                    <img src="images/img-supercalc.jpeg" alt="Image Supercalculateur">
+                </div>
+            </div>
+        </section>
+    
+        <section id="clients">
+            <div class="container flex-col">
+                <h2>Nos principaux clients</h2>
+                <div class="container flex center small-gap carousel">
+                    <div class="side slider-before">
+                        <a class="img-car hidden" href="https://www.douane.gouv.fr/" target="_blank">
+                            <img src="images/img-client-3.png" alt="client 3">
+                        </a>
+                        <a class="img-car hidden" href="https://www.bordeaux-metropole.fr/" target="_blank">
+                            <img src="images/img-client-4.png" alt="client 4">
+                        </a>
+                        <a class="img-car hidden" href="https://www.esa.int/" target="_blank">
+                            <img src="images/img-client-5.png" alt="client 5">
+                        </a>
+                        <a class="img-car hidden" href="https://www.marseille-port.fr/" target="_blank">
+                            <img src="images/img-client-6.png" alt="client 6">
+                        </a>
+                        <a class="img-car hidden" href="https://www.bouyguestelecom.fr/" target="_blank">
+                            <img src="images/img-client-7.png" alt="client 7">
+                        </a>
+                        <a class="img-car hidden" href="https://grtgaz.com/" target="_blank">
+                            <img src="images/img-client-8.png" alt="client 8">
+                        </a>
+                        <a class="img-car" href="https://www.sncf.com/fr" target="_blank">
+                            <img src="images/img-client-9.png" alt="client 9">
+                        </a>
+                    </div>
+                    <button class="button-before" type="button"><img class="start icon-chevron p-0" src="icons/chevron-left.svg" alt="Chevron Left"></button>
+                    <div class="front slider-front">
+                        <a class="img-car" href="https://www.culture.gouv.fr/" target="_blank">
+                            <img src="images/img-client-1.png" alt="client 1">
+                        </a>
+                    </div>
+                    <button class="button-after" type="button"><img class="end icon-chevron p-0" src="icons/chevron-right.svg" alt="Chevron Right"></button>
+                    <div class="side slider-after">
+                        <a class="img-car" href="https://www.sephora.fr/" target="_blank">
+                            <img src="images/img-client-2.png" alt="client 2">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    
+    <footer>
+        <div class="flex-col center">
+            <div class="flex w-100 small-gap center">
+                <h2 id="title">Nous Contacter</h2>
+                <img class="footer-chev" src="icons/chevron-down.svg">
+            </div>
+            <div class="box-contact show.active">
+                <div class="gauche">
+                    <div class="footerBlock">
+                    <h2>Par Message</h2>
+                    <form action="traitement.php" method="post">
+                        <label for="nom">Nom</label>
+                        <input id="nom" name="nom" type="text" required>
+                        <label for="prenom">Prenom</label>
+                        <input id="prenom" name="prenom" type="text" required>
+                        <label for="email">Email</label>
+                        <input id="email" name="email" type="email" required>
+                        <label for="motif">Motif</label>
+                        <select id="motif" name="motif">
+                            <option value="">Choisir une option</option>
+                            <option value="motif1">Motif 1</option>
+                            <option value="motif2">Motif 2</option>
+                            <option value="motif3">Motif 3</option>
+                            <option value="motif4">Motif 4</option>
+                            <option value="motif5">Motif 5</option>
+                        </select>
+                        <label for="message">Description</label>
+                        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                        <button type="submit">Envoyer</button>
+                    </form>
+                    <br>
+                    </div>
+                </div>
+        
+                <div class="droite">
+                    <div class="footerBlock">
+                    <h2>Par Courrier</h2>
+                    <h3>Adresse:</h3>
+                    <p>River Ouest, 80 quai Voltaire</p>
+                    <p>Bezons</p>
+                    <p>Atos</p>
+                    <p>France</p>
+                    <h3>Code Postal</h3>
+                    <p>95877</p>
+                    <h3>Téléphone</h3>
+                    <p>+33 1 73 26 00 00 appels non-surtaxés</p>
+                    <h3>Mail</h3>
+                    <p>info@atos.com</p>
+                    <img src="images/img-contactus.png" alt="Contact Us">
+                    </div>
+                </div>
+            </div>
+            
+    </footer>
+    <script src="src/js/accueil.js"></script>
+    <script src="src/js/navbar.js"></script>
+    <script src="src/js/footer.js"></script>
+</body>
+</html>

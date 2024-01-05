@@ -1,0 +1,196 @@
+/* Partie accueil */
+
+header {
+    .header-title {
+        max-width: 545px;
+    }
+    
+    .header-img {
+        max-width: 250px;
+        max-height: 170px;
+    }
+    
+    #accroche {
+        height: 500px;
+    }
+    
+    .fig-head {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100%;
+        padding: 20px;
+        gap: 20px;
+        
+    }
+}
+
+#secteurs {
+    ul {
+        gap: 20px;
+    }
+    button {
+        background-color: var(--primary);
+        border: .5px solid rgb(199, 199, 199);
+        width: 150px;
+        color:black;
+    }
+    button:hover {
+        background-color: var(--complementary);
+        color: var(--primary);
+    }
+
+    
+}
+
+.ul-secteurs {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.secteur-container {
+    padding: 50px 0px 0px 0px;
+}
+
+.info-secteur {
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+
+    div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 15px;
+        max-width: 440px;
+    
+        a, a:visited {
+            width: 70%;
+            background-color: var(--secondary);
+            color: #f4f4f4;
+            text-align: center;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
+        }
+        a:hover {
+            background-color: var(--complementary);
+        }
+    }
+
+    img {
+        width: 400px;
+        height: 250px; 
+        padding: 0;
+    }
+}
+
+#clients {
+    h2 {
+        text-align: center;
+        font-size: xx-large;
+    }
+    button {
+        width: 64px;
+        height: 64px;
+        min-width: 64px;
+        min-height: 64px;
+        background-color: transparent;
+        padding: 0;
+
+        &:hover {
+            background-color: transparent;
+            box-shadow: none;
+        }
+
+        img {
+            width: 64px;
+            height: 64px;
+            padding: 0;
+        }
+    }
+
+}
+
+.side {
+    width: 202px;
+    height: 142px;
+    min-width: 202px;
+    min-height: 142px;
+    opacity: 0.4;
+}
+
+.side, .front {
+    max-width: none;
+    max-height: none;
+}
+
+.front {
+    width: 328px;
+    height: 245px;
+    min-width: 328px;
+    min-height: 245px;
+}
+
+.img-car {
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.carousel {
+    flex-direction: column;
+}
+
+
+@media screen and (min-width: 600px) {
+    #secteurs button{
+        width: 250px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #secteurs button{
+        width: 170px;
+    }
+    .fig-head {
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .fig-head {
+        text-align: start;
+        justify-content: space-between;
+        gap: 115px;
+        h1 {
+            font-size: 2.5rem;
+        }
+    }
+    .carousel {
+        flex-direction: row;
+    }
+
+    .secteur-container {
+        padding: 50px;
+    }
+
+}
+
+@media screen and (min-width: 1034px) {
+
+    .accroche-secteur {
+        align-items: flex-start;
+        text-align: start;
+        max-width: 400px;
+    }
+
+}
