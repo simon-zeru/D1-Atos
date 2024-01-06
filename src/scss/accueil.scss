@@ -139,18 +139,33 @@ header {
     height: 245px;
     min-width: 328px;
     min-height: 245px;
+    a {
+        height: 100%;
+        width: 100%;
+        display: block;
+        padding: 0;
+    }
 }
 
 .img-car {
-    display: flex;
-    height: auto;
-    width: auto;
-    min-width: 100%;
-    min-height: 100%;
+    img {
+        min-width: 100%;
+        min-height: 100%;
+    }
+    
 }
 
 .carousel {
     flex-direction: column;
+}
+
+.annulation {
+    a:hover, img:hover, a, img {
+        pointer-events: none;
+        box-shadow: none;
+        cursor: default;
+    }
+    
 }
 
 

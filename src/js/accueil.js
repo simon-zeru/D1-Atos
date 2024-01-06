@@ -90,7 +90,7 @@ function slideDir (dir) {
     let b;
     // Structure linéaire utilisée : FILE (FIFO : First In First Out)
     // Définir le sens, ici : TOUJOURS a -> b
-    if (dir===1) {
+    if (dir===-1) {
         // Sens backward
         a = sliderAfter;
         b = sliderBefore;
@@ -104,18 +104,17 @@ function slideDir (dir) {
     a.querySelectorAll('.img-car').forEach(img => img.classList.add('hidden'));
     b.querySelectorAll('.img-car').forEach(img => img.classList.add('hidden'));
 
-
     const imgCurrent = sliderCurrent.children[0]; // Image du milieu (c)
 
-    if (dir < 0) {  
+    if (dir > 0) {  
         // Schéma forward : A (SliderBefore) --> C (SliderCurrent) --> B (Slider After)
         const headA = a.children[a.children.length-1]; // Image en tête de a
         const headB = b.children[b.children.length-1]; // Image en tête de b
 
         // Déplacez les images en avant
         b.insertBefore(imgCurrent, b.children[0]); // image du milieu déplacée en queue du b
-        sliderCurrent.appendChild(headA); // image en tête de file du a déplacée au milieu
         a.insertBefore(headB, a.children[0]); // image en tête de file du b déplacée en queue du a
+        sliderCurrent.appendChild(headA); // image en tête de file du a déplacée au milieu
     } else {
         // Schéma backward : B (SliderBefore) <-- C (SliderCurrent) <-- A (Slider After)
         const tailA = a.children[0]; // Image en queue de a
@@ -130,7 +129,6 @@ function slideDir (dir) {
     // Retirez la classe 'hidden' des images à afficher qui sont en tête de file de a, b et c
     a.children[a.children.length-1].classList.remove('hidden');
     b.children[b.children.length-1].classList.remove('hidden');
-    sliderCurrent.children[0].classList.remove('hidden')
+    sliderCurrent.children[0].classList.remove('hidden');
     
 }
-
