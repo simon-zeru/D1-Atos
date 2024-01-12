@@ -1,3 +1,38 @@
+<?php
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Récupérer les données du formulaire
+    $nom = $_POST['nom'];
+    $prenom = $_POST['prenom'];
+    $email = $_POST['email'];
+    $motif = $_POST['motif'];
+    $message = $_POST['message'];
+
+    $to = 'gimbert.bastien@gmail.com';
+
+    $subject = 'Formulaire de contact de ' . $nom . ' ' . $prenom;
+
+    $body = "Nouveau message ! .\n\n";
+    $body .= "Nom: " . $nom . "\n";
+    $body .= "Prenom: " . $prenom . "\n";
+    $body .= "Email: " . $email . "\n";
+    $body .= "Motif: " . $motif . "\n";
+    $body .= "Message:\n" . $message . "\n";
+
+    $headers = "De: " . $email;
+
+    // Envoyer l'email
+    if (mail($to, $subject, $body, $headers)) {
+        echo "Message envoyé avec succès.";
+    } else {
+        echo "Échec de l'envoi du message.";
+    }
+}
+?>
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,3 +62,5 @@
     ?>
 </body>
 </html>
+
+
