@@ -1,7 +1,12 @@
 /* Partie des 4 secteurs */
 
+.titleHead {
+    text-align: center;
+    padding: 100px 0;
+}
 
 #accroche {
+    padding: 100px 200px;
     img {
         width: 200px;
         height: 200px;
@@ -13,14 +18,16 @@
     margin-left: 15%;
     display: flex;
     flex-direction: column;
+    padding-bottom: 100px;
+    gap: 100px;
 }
 
 .arg {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    margin-top: 50px;
+    gap: 150px;
 
     p {
         max-width: 500px;
