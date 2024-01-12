@@ -1,39 +1,64 @@
 /* Partie "nos valeurs" */
-
-section {
-    margin-right: 5%;
-    margin-left: 5%;
+#accroche {
+    img {
+        width: 200px;
+        height: 200px;
+    }
 }
 
-section div div img {
-    width: 200px;
-    height: 200px;
-    
-}
-
-section div {
+#arguments {
+    margin-right: 15%;
+    margin-left: 15%;
     display: flex;
     flex-direction: column;
-    margin: 2%;
 }
 
-div figure {
+.arg {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
+    margin-top: 50px;
+
+    p {
+        max-width: 500px;
+    }
+
+    img {
+        width: 200px;
+        height: 200px;
+    }
 }
 
-section div div:nth-child(2) {
-    align-self: flex-end;
+#reverse {
+    flex-direction: row-reverse;
 }
 
-section div div {
-    display: flex;
-    flex-direction: column;
+@media screen and (max-width: 1200px) {
+    #arguments {
+        margin-right: 5%;
+        margin-left: 5%;
+    }
 }
 
-section div div {
-    width: 40%;
-    height: auto;
+@media screen and (max-width: 992px) {
+    h1 {
+        text-align: center;
+    }
+
+    #reverse {
+        flex-direction: column;
+    }
+
+    .arg {
+        flex-direction: column;
+        gap: 20px;
+
+        p {
+            max-width: 300px;
+            text-align: center;
+        }
+    }
 }
+
+
