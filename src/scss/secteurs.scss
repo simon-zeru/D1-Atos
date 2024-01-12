@@ -5,6 +5,10 @@
     padding: 100px 20px;
 }
 
+.imgHead {
+    padding: 0;
+}
+
 #accroche {
     padding: 100px 200px;
     img {
@@ -68,6 +72,14 @@
             text-align: center;
         }
     }
+}
+
+@media screen and (min-width: 992px) {
+
+     .header-title {
+        font-size: 2.5rem;
+     }
+            
 }
 
 
