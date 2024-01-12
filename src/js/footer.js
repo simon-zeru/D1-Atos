@@ -39,16 +39,8 @@ chevron.addEventListener('click', () => {
 
     }else{
         chevron.src = 'icons/chevron-down.svg';
-        // Défilement vers le haut de la page
-        window.scrollTo({
-            top: document.body.scrollTop,
-            behavior: 'smooth' 
-        });
 
-        // Bascule la classe 'active' 150ms plus tard pour laisser le temps de défiler
-        setTimeout(function() {
-            boxcontact.classList.toggle('active');
-        }, 150);
+        boxcontact.classList.toggle('active');
     }
 
 });

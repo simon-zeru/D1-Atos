@@ -47,14 +47,15 @@ footer {
 
 
 .box-contact {
-    overflow: hidden;
-    max-height: 0px; 
-    transition: max-height 0.2s ease-out;
+    overflow: hidden; 
+    margin: 0% 10% 0% 10%;
+    max-height: 0;
+    transition: max-height 0.2s ease-in-out;
 }
 
 .box-contact.active {
-    margin: 0% 10% 0% 10%;
-    max-height: 5000px;
+    overflow: visible;
+    max-height: 100%;
 }
 
 
