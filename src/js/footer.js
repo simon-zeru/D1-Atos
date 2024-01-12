@@ -18,6 +18,12 @@ chevron.addEventListener('click', () => {
     }
 });*/
 
+// Si on est sur la page Rejoindre.html, on affiche la boxcontact
+if (window.location.href.indexOf('Rejoindre.html') > -1) {
+    boxcontact.classList.add('active');
+    chevron.src = 'icons/chevron-up.svg';
+}
+
 chevron.addEventListener('click', () => {
     if(!boxcontact.classList.contains('active')){
         chevron.src = 'icons/chevron-up.svg';
