@@ -20,6 +20,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $body .= "Message:\n" . $message . "\n";
 
     $headers = "De: " . $email;
+
+    // Envoyer l'email
+    mail($to, $subject, $body, $headers);
+}
 }
 ?>
 

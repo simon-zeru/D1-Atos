@@ -89,7 +89,7 @@
                         <label for="email">Email</label>
                         <input type="text">
                         <label for="motif">Motif</label>
-                        <select>
+                        <select id="motif" name="motif" required>
                             <option value="">Choisir un motif</option>
                             <option value="motif1">Demande d'informations</option>
                             <option value="motif2">Suggestions</option>
@@ -97,7 +97,7 @@
                             <option value="motif4">Autres</option>
                         </select>
                         <label for="message">Description</label>
-                        <textarea name="message" cols="30" rows="10"></textarea>
+                        <textarea name="message" cols="30" rows="10" required></textarea>
                         <button type="submit">Envoyer</button>
                     </form>
                     <br>
