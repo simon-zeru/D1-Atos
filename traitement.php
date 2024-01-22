@@ -39,6 +39,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <link rel="stylesheet" href="src/css/main.css">
     <link rel="stylesheet" href="src/css/navbar.css">
     <link rel="stylesheet" href="src/css/footer.css">
+    <link rel="stylesheet" href="src/css/reponses.css">
     <link rel="icon" type="image/png" href="icons/favicon.png">
     <title>Réponse</title>
     <meta charset="utf-8">
