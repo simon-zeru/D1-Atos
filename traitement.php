@@ -64,7 +64,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </div>
     </header>
     <main>
-      <div>
+      <div class="reponse">
         <h1>Nous avons bien reçu votre message !</h1>
         <h2>Nous vous répondrons par mail dans les plus brefs délais.</h2>
         <a href="/Accueil.html">Retourner à la page d'accueil</a>

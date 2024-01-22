@@ -1,5 +1,5 @@
 main {
-    div {
+    .reponse {
         height: 100vh;
         display: flex;
         flex-direction: column;
@@ -8,13 +8,14 @@ main {
         align-items: center;
         gap: 20px;
 
-        a {
+        a, a:active, a:visited, a:focus {
             box-shadow: none;
             width: 300px;
             background-color: var(--secondary);
             color: white;
             &:hover {
                 background-color: var(--complementary);
+                color: white;
             }
         }
     }
