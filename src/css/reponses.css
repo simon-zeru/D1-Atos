@@ -1,1 +1,1 @@
-main div{display:flex;flex-direction:column;gap:20px}/*# sourceMappingURL=reponses.css.map */
+main div{height:100vh;display:flex;flex-direction:column;text-align:center;justify-content:center;align-items:center;gap:20px}main div a{box-shadow:none;width:300px;background-color:var(--secondary);color:#fff}main div a:hover{background-color:var(--complementary)}/*# sourceMappingURL=reponses.css.map */

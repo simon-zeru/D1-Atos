@@ -38,7 +38,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <head>
     <link rel="stylesheet" href="src/css/main.css">
     <link rel="stylesheet" href="src/css/navbar.css">
-    <link rel="stylesheet" href="src/css/footer.css">
     <link rel="stylesheet" href="src/css/reponses.css">
     <link rel="icon" type="image/png" href="icons/favicon.png">
     <title>Réponse</title>
@@ -72,61 +71,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       </div>
       
     </main>
-    <footer>
-      <div class="flex-col center">
-          <div class="flex w-100 small-gap center">
-              <h2 id="title">Nous Contacter</h2>
-              <img class="footer-chev" src="icons/chevron-down.svg">
-          </div>
-          <div class="box-contact show.active">
-              <div class="gauche">
-                  <div class="footerBlock">
-                  <h2>Par Message</h2>
-                  <form action="traitement.php" method="post">
-                      <label for="nom">Nom</label>
-                      <input id="nom" name="nom" type="text" required>
-                      <label for="prenom">Prenom</label>
-                      <input id="prenom" name="prenom" type="text" required>
-                      <label for="email">Email</label>
-                      <input id="email" name="email" type="email" required>
-                      <label for="motif">Motif</label>
-                      <select id="motif" name="motif">
-                          <option value="">Choisir une option</option>
-                          <option value="motif1">Motif 1</option>
-                          <option value="motif2">Motif 2</option>
-                          <option value="motif3">Motif 3</option>
-                          <option value="motif4">Motif 4</option>
-                          <option value="motif5">Motif 5</option>
-                      </select>
-                      <label for="message">Description</label>
-                      <textarea name="message" id="message" cols="30" rows="10"></textarea>
-                      <button type="submit">Envoyer</button>
-                  </form>
-                  <br>
-                  </div>
-              </div>
-      
-              <div class="droite">
-                  <div class="footerBlock">
-                  <h2>Par Courrier</h2>
-                  <h3>Adresse:</h3>
-                  <p>River Ouest, 80 quai Voltaire</p>
-                  <p>Bezons</p>
-                  <p>Atos</p>
-                  <p>France</p>
-                  <h3>Code Postal</h3>
-                  <p>95877</p>
-                  <h3>Téléphone</h3>
-                  <p>+33 1 73 26 00 00 appels non-surtaxés</p>
-                  <h3>Mail</h3>
-                  <p>info@atos.com</p>
-                  <img src="images/img-contactus.png" alt="Contact Us">
-                  </div>
-              </div>
-          </div>
-    </footer>
     <script src="src/js/navbar.js"></script>
-    <script src="src/js/footer.js"></script>
 </body>
 </html>
 

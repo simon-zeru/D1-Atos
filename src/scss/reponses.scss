@@ -1,7 +1,21 @@
 main {
     div {
+        height: 100vh;
         display: flex;
         flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
         gap: 20px;
+
+        a {
+            box-shadow: none;
+            width: 300px;
+            background-color: var(--secondary);
+            color: white;
+            &:hover {
+                background-color: var(--complementary);
+            }
+        }
     }
 }
