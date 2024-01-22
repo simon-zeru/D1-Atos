@@ -24,7 +24,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Envoyer l'email
     mail($to, $subject, $body, $headers);
 }
-}
 ?>
 
 
