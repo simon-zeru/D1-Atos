@@ -20,13 +20,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $body .= "Message:\n" . $message . "\n";
 
     $headers = "De: " . $email;
-
-    // Envoyer l'email
-    if (mail($to, $subject, $body, $headers)) {
-        echo "Message envoyé avec succès.";
-    } else {
-        echo "Échec de l'envoi du message.";
-    }
 }
 ?>
 
