@@ -100,22 +100,12 @@ header {
         font-size: xx-large;
     }
     button {
-        width: 64px;
-        height: 64px;
-        min-width: 64px;
-        min-height: 64px;
         background-color: transparent;
         padding: 0;
 
         &:hover {
             background-color: transparent;
             box-shadow: none;
-        }
-
-        img {
-            width: 64px;
-            height: 64px;
-            padding: 0;
         }
     }
 
@@ -157,6 +147,14 @@ header {
 
 .carousel {
     flex-direction: column;
+    button {
+        svg:first-child {
+            display: none;
+        }
+        svg:nth-child(2) {
+            display: block;
+        }
+    }
 }
 
 .annulation {
@@ -195,6 +193,14 @@ header {
     }
     .carousel {
         flex-direction: row;
+        button {
+            svg:first-child {
+                display: block;
+            }
+            svg:nth-child(2) {
+                display: none;
+            }
+        }
     }
 
     .secteur-container {
