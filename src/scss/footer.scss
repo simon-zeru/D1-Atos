@@ -46,6 +46,7 @@ footer {
 }
 
 .box-contact {
+    margin: 0% 8%;
     transform-origin: top;
     transform: scaleY(0);
     height: 0;
@@ -98,6 +99,10 @@ footer {
 
     button:hover {
         background-color: var(--complementary);
+    }
+
+    img {
+        width: 300px;
     }
 }
 
