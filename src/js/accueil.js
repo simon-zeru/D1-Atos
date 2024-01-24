@@ -61,11 +61,11 @@ function slideDir (dir) {
     // Structure linéaire utilisée : FILE (FIFO : First In First Out)
     // Définir le sens, ici : TOUJOURS a -> b
     if (dir===1) {
-        // Sens backward
+        // Sens forward
         a = sliderAfter;
         b = sliderBefore;
     } else {
-        // Sens forward
+        // Sens backward
         b = sliderAfter;
         a = sliderBefore;
     }
@@ -77,7 +77,7 @@ function slideDir (dir) {
     const imgCurrent = sliderCurrent.children[0]; // Image du milieu (c)
 
     if (dir < 0) {  
-        // Schéma forward : A (SliderBefore) --> C (SliderCurrent) --> B (Slider After)
+        // Schéma backward : A (SliderBefore) --> C (SliderCurrent) --> B (Slider After)
         const headA = a.children[a.children.length-1]; // Image en tête de a
         const headB = b.children[b.children.length-1]; // Image en tête de b
 
@@ -86,7 +86,7 @@ function slideDir (dir) {
         a.insertBefore(headB, a.children[0]); // image en tête de file du b déplacée en queue du a
         sliderCurrent.appendChild(headA); // image en tête de file du a déplacée au milieu
     } else {
-        // Schéma backward : B (SliderBefore) <-- C (SliderCurrent) <-- A (Slider After)
+        // Schéma forward : B (SliderBefore) <-- C (SliderCurrent) <-- A (Slider After)
         const tailA = a.children[0]; // Image en queue de a
         const tailB = b.children[0]; // Image en queue de b
 

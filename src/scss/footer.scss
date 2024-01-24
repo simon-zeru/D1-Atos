@@ -45,17 +45,15 @@ footer {
     box-shadow:none;
 }
 
-
 .box-contact {
-    overflow: hidden; 
-    margin: 0;
-    max-height: 0;
-    transition: max-height 0.2s ease-in-out;
+    transform-origin: top;
+    transform: scaleY(0);
+    height: 0;
+    transition: transform 0.2s ease-in-out;
 }
 
 .box-contact.active {
-    overflow: visible;
-    max-height: 100%;
+    transform: scaleY(1);
 }
 
 
